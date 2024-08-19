@@ -1,0 +1,96 @@
+.our-teams-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.our-teams-container .our-teams-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 64px;
+  column-gap: 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .image-container {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  border: 3px solid #171717;
+  box-shadow: 6px 6px 0px 0px #171717;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .image-container img {
+  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 8px 8px 8px;
+  background-color: white;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .text-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .text-container span {
+  color: rgba(23, 23, 23, 0.5);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .text-container h3 {
+  color: #000;
+  font-family: "montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 16px;
+  /* 100% */
+  text-transform: uppercase;
+}
+
+.our-teams-container .our-teams-list-container .our-team-item .text-container p {
+  color: #000;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-teams-container .our-teams-list-container {
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+  }
+}

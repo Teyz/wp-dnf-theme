@@ -1,0 +1,168 @@
+.practicians-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #131433;
+  padding: 50px 32px 0 32px;
+  margin-top: 100px !important;
+}
+
+.practicians-container .practicians-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.practicians-container .practicians-wrapper .practicians-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  color: #FFF;
+}
+
+.practicians-container .practicians-wrapper .text p {
+  max-width: 585px;
+}
+
+.practicians-container .practicians-wrapper .swiper-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.practicians-container .practicians-wrapper .practicians-swiper {
+  width: 100%;
+}
+
+.practicians-container .practicians-wrapper .practicians-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+}
+
+.practicians-container .practicians-wrapper .practicians-tabs .practicians-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all ease 0.25s;
+}
+
+.practicians-container .practicians-wrapper .practicians-tabs .practicians-tab.active,
+.practicians-container .practicians-wrapper .practicians-tabs .practicians-tab:hover {
+  background: #0D0E24;
+  box-shadow: 15px 20px 50px 0px #0E0F27;
+  transition: all ease 0.25s;
+  cursor: pointer;
+}
+
+.practicians-container .practicians-wrapper .practicians-tabs .practicians-tab h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.practicians-container .practicians-wrapper .practicians-tabs .practicians-tab p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+
+.practicians-container .certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.practicians-container .certifications .certification {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.practicians-container .certifications .certification div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.practicians-container .certifications .certification-icon {
+  align-items: center;
+  border-radius: 10px;
+  background: #E0F8DE;
+  padding: 10px;
+  color: #151630;
+}
+
+.practicians-container .practicians-images {
+  border-radius: 500px 500px 30px 30px;
+  background: #0D0E24;
+  width: 100%;
+  height: 661px;
+}
+
+.practicians-container .practicians-images img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.swiper {
+  width: 450px;
+  height: 660px;
+}
+
+.swiper-diplomas {
+  width: 725px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.swiper-diplomas * {
+  overflow: hidden !important;
+}
+
+.swiper-diploma {
+  width: auto;
+  height: auto;
+}
+
+.swiper-diploma * {
+  overflow: hidden !important;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: flex-start;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide-shadow {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .practicians-container {
+    flex-direction: row;
+    padding: 100px 250px 0 250px;
+  }
+
+  .practicians-container .practicians-wrapper {
+    max-width: 780px;
+  }
+
+  .practicians-container .practicians-images {
+    width: 555px;
+    height: 661px;
+  }
+}

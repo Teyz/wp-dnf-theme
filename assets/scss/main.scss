@@ -1,0 +1,242 @@
+/*
+Theme Name: appsHubs
+Template: appsHubs
+Author: Bastien Rigaud
+Author URI: https://github.com/teyz
+Description: Wordpress theme for Ascension
+Version: 1.0
+*/
+
+@import 'reset';
+@import 'header';
+@import 'common';
+@import 'hero';
+@import 'last-videos';
+@import 'last-articles';
+@import 'faq';
+@import 'contact';
+@import 'single';
+@import 'video';
+@import 'about';
+@import 'our_teams';
+@import 'ambassadors';
+@import 'footer';
+
+@font-face {
+  font-family: 'herokid';
+  src: url('../fonts/Herokid-Bold.otf') format('opentype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'bakerline';
+  src: url('../fonts/bakerline-clean.otf') format('opentype');
+       font-display: swap;
+       font-weight: 400;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+       font-display: swap;
+       font-weight: 900;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+       font-display: swap;
+       font-weight: 600;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+       font-display: swap;
+       font-weight: 400;
+       font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  background: linear-gradient(180deg, #FFF 16.27%, #F9F9F9 67.98%);
+  font-family: 'montserrat';
+  position: relative;
+  color: #18181A;
+
+  &.open {
+    overflow-y: hidden;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  gap: 100px;
+  z-index: 100;
+
+  &:before {
+    content: url("../img/shape.svg");
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    z-index: -1;
+  }
+
+  &:after {
+    content: url("../img/shape-1.svg");
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
+  }
+}
+
+.video-container {
+  &:before {
+    content: url("../img/shape.svg");
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    z-index: -1;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px; /* 129.167% */
+  letter-spacing: -0.722px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #18181A;
+  font-family: 'herokid';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+}
+
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  color: #18181A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.25px;
+}
+
+.btn {
+  border-radius: 100px;
+  background: #18181A;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #F9F9F9;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 114.286% */
+
+  transition: all .3s ease;
+
+  &:hover {
+      background: #04C9FB;
+      box-shadow: 4px 4px 0px 0px #FFF;
+  }
+
+  &.btn-yellow {
+    background: #FFC62E;
+    color: #775A0C;
+  }
+
+  &.btn-blue {
+    background: #04C9FB;
+    color: white;
+  }
+
+  &.btn-white {
+    background: #FFF;
+    color: #10101B;
+  }
+
+  &.btn-square {
+    border-radius: 0;
+  }
+
+  &.btn-pink {
+    border-radius: 0;
+    background: #F14E75;
+    text-transform: uppercase;
+  }
+}
+
+.custom-language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  li {
+      display: flex;
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background: #FFF;
+      transition: all .3s ease;
+
+      &.twitter {
+          background: black;
+          border: 3px solid #FFF;
+      }
+
+      &:hover {
+          box-shadow: 2px 2px 0px 0px #FFF;
+          cursor: pointer;
+      }
+
+      img {
+          width: 13px;
+          height: 16px;
+          object-fit: contain;
+      }
+  }
+}

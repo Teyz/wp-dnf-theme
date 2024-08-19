@@ -1,0 +1,149 @@
+.about-container {
+    padding: 32px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
+
+    .hero-container {
+        padding-top: 48px;
+    }
+
+    .hero-video-container {
+        width: 100%;
+        height: 280px;
+        @media screen and (min-width: 1200px) {
+            width: 480px;
+        }
+    }
+
+    .hero-content-container {
+        padding: 0;
+    }
+
+    .block-header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        justify-content: center;
+        align-items: center;
+
+        .timeline-header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: #000;
+                font-family: 'montserrat';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: #18181A;
+                font-family: "bakerline";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+        }
+
+        .timeline-events-container {
+            position: relative;
+
+            .event {
+                position: relative;
+                width: 100%;
+                padding: 20px 40px;
+                box-sizing: border-box;
+            }
+
+            .first, .third {
+                text-align: right;
+            }
+            
+            .event.left {
+                right: 50%;
+            }
+            
+            .event.right {
+                left: 50%;
+            }
+            
+            .event .content {
+                position: relative;
+            }
+
+            .first .content:before {
+                content: url("../img/about/first.svg");
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: -44px;
+            }
+
+            .second .content:before {
+                content: url("../img/about/second.svg");
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -50px;
+            }
+
+            .third .content:before {
+                content: url("../img/about/third.svg");
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: -44px;
+            }
+            
+            .date {
+                color: #000;
+                font-family: "montserrat";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: #000;
+                font-family: "montserrat";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #000;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                max-width: 480px;
+            }
+        }
+    }
+}

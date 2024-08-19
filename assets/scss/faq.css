@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 44px;
+  padding: 0 16px 48px 16px;
+}
+
+.faq-container.reverse {
+  padding: 100px 16px 48px 16px;
+  flex-direction: column-reverse;
+}
+
+.faq-container .faq-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 12px;
+}
+
+.faq-container .faq-header-container p,
+.faq-container .faq-header-container h2 {
+  max-width: 620px;
+}
+
+.faq-container .faq-questions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 620px;
+}
+
+.faq-container .faq-questions-container .faq-question-container {
+  width: 100%;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  background: #31313E;
+}
+
+.faq-container .faq-questions-container .faq-question-container.isActive .panel p {
+  padding-bottom: 12px;
+}
+
+.faq-container .faq-questions-container .accordion {
+  background: #31313E;
+  color: #FFF;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.faq-container .faq-questions-container .accordion:after {
+  content: "➕";
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-container .faq-questions-container .active:after {
+  content: "➖";
+}
+
+.faq-container .faq-questions-container .active,
+.faq-container .faq-questions-container .accordion:hover {
+  background: #1E1E2D;
+}
+
+.faq-container .faq-questions-container .panel {
+  background: #1E1E2D;
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #B3B4B8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .faq-container {
+    flex-direction: row;
+    padding: 100px 0;
+  }
+
+  .faq-container.reverse {
+    flex-direction: row-reverse;
+    padding: 100px 0;
+  }
+}

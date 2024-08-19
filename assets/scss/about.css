@@ -1,0 +1,152 @@
+.about-container {
+  padding: 32px;
+}
+
+.about-container .hero-container {
+  padding-top: 48px;
+}
+
+.about-container .hero-video-container {
+  width: 100%;
+  height: 280px;
+}
+
+.about-container .hero-content-container {
+  padding: 0;
+}
+
+.about-container .block-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.about-container .timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container .timeline-container .timeline-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container .timeline-container .timeline-header-container span {
+  color: #000;
+  font-family: "montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about-container .timeline-container .timeline-header-container h2 {
+  color: #18181A;
+  font-family: "bakerline";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-container .timeline-container .timeline-events-container {
+  position: relative;
+}
+
+.about-container .timeline-container .timeline-events-container .event {
+  position: relative;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.about-container .timeline-container .timeline-events-container .first,
+.about-container .timeline-container .timeline-events-container .third {
+  text-align: right;
+}
+
+.about-container .timeline-container .timeline-events-container .event.left {
+  right: 50%;
+}
+
+.about-container .timeline-container .timeline-events-container .event.right {
+  left: 50%;
+}
+
+.about-container .timeline-container .timeline-events-container .event .content {
+  position: relative;
+}
+
+.about-container .timeline-container .timeline-events-container .first .content:before {
+  content: url("../img/about/first.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -44px;
+}
+
+.about-container .timeline-container .timeline-events-container .second .content:before {
+  content: url("../img/about/second.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50px;
+}
+
+.about-container .timeline-container .timeline-events-container .third .content:before {
+  content: url("../img/about/third.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -44px;
+}
+
+.about-container .timeline-container .timeline-events-container .date {
+  color: #000;
+  font-family: "montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about-container .timeline-container .timeline-events-container h2 {
+  color: #000;
+  font-family: "montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about-container .timeline-container .timeline-events-container p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-container {
+    padding: 0;
+  }
+
+  .about-container .hero-video-container {
+    width: 480px;
+  }
+}

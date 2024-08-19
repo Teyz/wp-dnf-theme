@@ -1,0 +1,89 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.block-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.block-header-container h2,
+.block-header-container h1 {
+  color: #18181A;
+  font-family: "bakerline";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.block-header-container .block-categories-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.block-header-container .block-categories-container li,
+.block-header-container .block-categories-container button {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  font-family: "bakerline";
+  font-weight: 400;
+  color: #18181A;
+  text-shadow: 3px 3px 0px transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: transparent;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 100px;
+  border: 3px solid #18181A;
+  background: #F9F9F9;
+  transition: all 0.3s ease;
+}
+
+.block-header-container .block-categories-container li:hover,
+.block-header-container .block-categories-container li.active,
+.block-header-container .block-categories-container button:hover,
+.block-header-container .block-categories-container button.active {
+  background: #4EB6F7;
+  box-shadow: 6px 4px 0px 0px #18181A;
+  color: #F9F9F9;
+  text-shadow: 3px 3px 0px #18181A;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #18181A;
+}
+
+.block-header-container .swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.block-header-container .swiper-buttons .swiper-videos-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: solid 3px #18181A;
+  transition: all 0.3s ease;
+}
+
+.block-header-container .swiper-buttons .swiper-videos-button.next {
+  background-color: #18181A;
+}
+
+.block-header-container .swiper-buttons .swiper-videos-button:hover {
+  box-shadow: 2px 2px 0px 0px #18181A;
+  cursor: pointer;
+}

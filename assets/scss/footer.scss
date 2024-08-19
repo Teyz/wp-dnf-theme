@@ -1,0 +1,180 @@
+footer {
+    background: #18181A;
+    position: relative;
+    display: flex;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    @media screen and (min-width: 1200px) {
+        padding: 24px 250px;
+    }
+
+    &:after {
+        content: url("../img/shape-footer.svg");
+        position: absolute;
+        right: 0;
+        bottom: 80%;
+
+        @media screen and (min-width: 1200px) {
+            bottom: 100%;
+        }
+    }
+
+    .shape-footer-container {
+        width: 100%;
+        height: 162px;
+        background-color: #171717;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+        position: absolute;
+        left: 0%;
+        bottom: 95%;
+        z-index: -1;
+
+        @media screen and (min-width: 1200px) {
+            bottom: 100%;
+        }
+      }
+
+    h4 {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .footer-partners-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        margin: 0 auto;
+
+        span {
+            overflow: hidden;
+            color: #B3B4B8;
+            text-align: center;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .footer-partners-list-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+
+        .informations {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 24px;
+
+            p {
+                max-width: 430px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .categories-container, .socials-list-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+
+        .footer-list {
+            color: #B3B4B8;
+
+            text-overflow: ellipsis;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            li {
+                position: relative;
+
+                &:after {
+                    content: url("../img/icon/open.svg");
+                    width: 11px;
+                    height: 16px;
+                    object-fit: contain;
+                    position: absolute;
+                    right: -30%;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    display: none;
+
+                    @media screen and (min-width: 1200px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .separator {
+        width: 100%;
+        height: 1px;
+        background-color: #2C2C38;
+    }
+
+    p {
+        overflow: hidden;
+        color: #B3B4B8;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        strong {
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            color: #FFF;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}

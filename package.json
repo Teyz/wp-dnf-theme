@@ -1,0 +1,36 @@
+{
+  "name": "dnf",
+  "version": "1.0.0",
+  "description": "Wordpress theme for AppsHub",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teyz/AppsHub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teyz/AppsHub/issues"
+  },
+  "homepage": "https://github.com/Teyz/AppsHub#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rev": "^10.0.0",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.62.1"
+  }
+}

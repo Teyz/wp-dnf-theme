@@ -1,0 +1,55 @@
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 72px;
+
+    gap: 44px;
+
+    max-width: 1048px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    .test {
+        width: 0;
+        height: 0;
+        border-left: 0 solid transparent;
+        border-right: 100% solid transparent;
+        border-bottom: 100px solid #007bff; /* Changez la couleur selon vos besoins */
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 48px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-video-container {
+        border-radius: 20px;
+        border: 3px solid #18181A;
+        box-shadow: 6px 6px 0px 0px #171717;
+        width: 280px;
+        height: 480px;
+    }
+
+    .hero-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+
+        padding: 0 32px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 0;
+        }
+
+        p {
+            max-width: 700px;
+        }
+    }
+}
